@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins';
+    overflow: hidden;
+}
+header.header{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+header.header .logo a img{
+    position: relative;
+    height: 100px;
+    z-index: -100 !important;
+}
+.cashapp img{
+    width: 200px;
+    padding: 20px;
+}
+.hero{
+    position: relative;
+    padding-top: 30px;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.hero .hero-left{
+    position: absolute;
+    left: -30px;
+    top: 85px;
+}
+.hero .hero-left .cashapp-img img{
+    width: 800px;
+    height: 500px;
+    margin-left: -200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+}
+.hero .hero-right{
+    position: absolute;
+    right: 50px;
+    z-index: 10;
+}
+.hero .hero-right .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero .hero-right .content .status{
+    display: flex;
+    font-size: 24px;
+    position: relative;
+    width: 235px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+.hero .hero-right .content .status strong{
+    color: rgb(255, 251, 0);
+}
+.hero .hero-right .content .status p{
+    margin-left: 3px;
+    color: rgb(46, 199, 0);
+}
+.hero .hero-right .content .status img{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+
+.hero .hero-right .content h3{
+    color: rgba(255, 255, 255, 0.747);
+    font-weight: 500;
+    font-size: 16px;
+}
+.hero .hero-right .content h1{
+    color: rgb(27, 116, 0);
+    font-weight: 700;
+    font-size: 60px;
+    -webkit-text-stroke: 2px rgba(189, 192, 1, 0.89);
+}
+.hero .hero-right .content p{
+    width: 350px;
+}
+.hero .hero-right .content .desc > p{
+    margin-top: 20px;
+    width: 500px;
+    font-size: 18px;
+    background: rgb(0, 116, 0);
+    padding: 10px 30px;
+    color: rgba(255, 255, 255, 0.747);
+    border-radius: 5px;
+    border: 1px dashed rgb(255, 255, 255);
+}
+.hero .hero-right .content a{
+    padding: 12px 20px;
+    font-size: 24px;
+    outline: none;
+    border: none;
+    background: rgb(0, 177, 38);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 50px;
+    animation: animatebtn 5s linear infinite;
+}
+
+@keyframes animatebtn{
+    10%{
+        background: red;
+    }
+    20%{
+        background: green;
+    }
+    30%{
+        background: rgb(0, 41, 128);
+    }
+    40%{
+        background: rgb(128, 0, 96);
+    }
+    50%{
+        background: rgb(128, 0, 0);
+    }
+    60%{
+        background: rgba(0, 0, 0, 0.925);
+    }
+    70%{
+        background: rgb(201, 171, 1);
+    }
+    80%{
+        background: green;
+    }
+    90%{
+        background: rgb(224, 120, 0);
+    }
+    100%{
+        background: blue;
+    }
+}
+
+.limited-offer {
+    position: absolute;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(16, 134, 0);
+    font-size: 20px;
+    padding: 5px 50px;
+    color: rgb(255, 255, 255);
+    transform: rotate(45deg) translateX(65px) translateY(-10px);
+}
+
+section.section2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1500px;
+    height: 700px;
+    background: rgba(39, 39, 39, 0.24);
+    z-index: -10;
+    position: fixed;
+}
+.heading{
+    display: flex;
+}
+.heading h1{
+    margin-right: 8px;
+}
+.background-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(https://res.cloudinary.com/didfcyxav/image/upload/v1657317579/background_gkjx7v.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    z-index: -10;
+    width: 1500px;
+    height: 700px;
+}
+
+@media screen and (max-width: 790px) {
+    .hero .hero-right .content h1{
+        font-size: 55px;
+    }
+}
+@media screen and (max-width: 740px) {
+    .hero .hero-right .content h1{
+        font-size: 52px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .hero .hero-right .content h1{
+        font-size: 48px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .hero .hero-right .content h1{
+        font-size: 45px;
+    }
+}
+@media screen and (max-width: 590px) {
+    .hero .hero-right .content h1{
+        font-size: 42px;
+    }
+}
+@media screen and (max-width: 670px) {
+    .hero .hero-right .content .desc > p{
+        width: 450px;
+        padding: 8px 20px;
+    }
+}
+@media screen and (max-width: 570px) {
+    .hero .hero-right .content h1{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .hero .hero-right .content .desc > p{
+        font-size: 16px;
+    }
+    .hero .hero-right{
+        right: 2px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .hero .hero-right .content .desc > p{
+        width: 400px;
+    }
+    .heading h1{
+        font-size: 55px !important;
+    }
+    .heading{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .hero .hero-right .content .desc > p{
+        width: 350px;
+        padding: 6px 14px;
+    }
+    .hero .hero-right{
+        right: 10px;
+    }
+    .limited-offer {
+        font-size: 16px;
+        padding: 4px 50px;
+        transform: rotate(45deg) translateX(55px) translateY(-10px);
+    }
+}
+@media screen and (max-width: 375px) {
+    .hero .hero-right{
+        right: 0px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .hero .hero-right .content .desc > p{
+        width: 300px;
+    }
+    .heading h1{
+        font-size: 45px !important;
+    }
+    .hero .hero-right{
+        right: 20px;
+    }
+}
+@media screen and (max-width: 340px) {
+    .hero .hero-right{
+        right: 10px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .hero .hero-right{
+        right: 3px;
+    }
+}
+@media screen and (max-width: 310px) {
+    .hero .hero-right .content .desc > p{
+        width: 250px;
+    }
+    .heading h1{
+        font-size: 40px !important;
+    }
+    .hero .hero-right{
+        right: 20px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .hero .hero-right{
+        right: 15px;
+    }
+}
+@media screen and (max-width: 285px) {
+    .hero .hero-right{
+        right: 10px;
+    }
+}
+@media screen and (max-width: 280px) {
+    .hero .hero-right{
+        right: 5px;
+    }
+}
+@media screen and (max-width: 270px) {
+    .hero .hero-right{
+        right: 3px;
+    }
+}
+@media screen and (max-width: 265px) {
+    .hero .hero-right{
+        right: 0px;
+    }
+}
